@@ -1,73 +1,163 @@
-import turtle
+from turtle import *
+shape("turtle")
+#lets draw a palace
+speed(4)
+#step 1 : rectangle
 
-# ფუნქცია მართკუთხედის ხატვისთვის
-def draw_rectangle(x, y, width, height, color):
-    """ხატავს მართკუთხედს მოცემულ კოორდინატებზე (x, y) განსაზღვრული სიგანით და სიმაღლით, 
-    შევსებული მითითებული ფერთან."""
-    turtle.penup()
-    turtle.goto(x, y)
-    turtle.pendown()
-    turtle.fillcolor(color)
-    turtle.begin_fill()
-    for _ in range(2):
-        turtle.forward(width)
-        turtle.left(90)
-        turtle.forward(height)
-        turtle.left(90)
-    turtle.end_fill()
+width(7)
+color("gray")
+begin_fill()
+forward(500)
+left(90)
+forward(300)
+left(90)
+forward(500)
+left(90)
 
-# ფანჯრის მომზადება
-turtle.speed(3)
-turtle.bgcolor("skyblue")
+end_fill()
 
-# მთავარი შენობა
-# ნიღაბი: ფართო და დიდ სიმაღლით
-draw_rectangle(-200, -150, 400, 300, "lightgray")
 
-# მთავარი შენობის ბატლემენტები (ზედა ხაზი)
-# ვხატავთ მცირე მართკუთხედებს ზედა ნაწილზე
-battlement_count = 8
-battlement_width = 40
-battlement_height = 20
-start_x = -200
-start_y = 150  # ძირითად შენობის ზედა სხვისი წერტილი
+#end of rectangle
 
-for i in range(battlement_count):
-    x = start_x + i * (400 / battlement_count)
-    draw_rectangle(x, start_y, battlement_width, battlement_height, "darkgray")
+#step 2 : door
 
-# მარცხენა ტაუნი (ტაძარი)
-draw_rectangle(-260, -150, 60, 400, "gray")
-# მარცხენა ტაუონის ბატლემენტები
-for i in range(3):
-    x = -260 + i * 20
-    draw_rectangle(x, 250, 15, 20, "black")
+color("brown")
+penup()
+goto(220,0)
+pendown()
+begin_fill()
+left(180)
+forward(100)
+right(90)
+forward(60)
+right(90)
+forward(100)
+right(90)
+forward(60)
+end_fill()
 
-# მარჯვენა ტაუნი (ტაძარი)
-draw_rectangle(200, -150, 60, 400, "gray")
-# მარჯვენა ტაუონის ბატლემენტები
-for i in range(3):
-    x = 200 + i * 20
-    draw_rectangle(x, 250, 15, 20, "black")
+#step 2 : roof
 
-# ცენტრალური კარი
-draw_rectangle(-40, -150, 80, 120, "brown")
+penup()
+goto(200,305)  
+pendown()
+begin_fill()
+color("orange")
+forward(30)
+right(90)
+forward(30)
+right(90)
+forward(50)
+right(90)
+forward(30)
+right(90)
+forward(30)
+end_fill()
 
-# კარიის ქვეშ ზომიერ ამოკლებით ხეაორგელით ანარკის შეტანის დასაკრავებლად
-turtle.penup()
-turtle.goto(-40, -150)
-turtle.pendown()
-turtle.color("brown")
-turtle.setheading(0)
-turtle.forward(80)
-turtle.setheading(90)
-turtle.circle(40, 180)  # ნახევარი წრე კარის ზემოთ
+penup()
+goto(100,305)  
+pendown()
+begin_fill()
+color("orange")
+forward(30)
+right(90)
+forward(30)
+right(90)
+forward(50)
+right(90)
+forward(30)
+right(90)
+forward(30)
+end_fill()
 
-# ფანჯრები მთავარი შენობაზე
-draw_rectangle(-160, 0, 40, 40, "blue")
-draw_rectangle(120, 0, 40, 40, "blue")
-draw_rectangle(-160, 100, 40, 40, "blue")
-draw_rectangle(120, 100, 40, 40, "blue")
+penup()
+goto(450,305)  
+pendown()
+begin_fill()
+color("orange")
+forward(30)
+right(90)
+forward(30)
+right(90)
+forward(50)
+right(90)
+forward(30)
+right(90)
+forward(30)
+end_fill()
 
-turtle.hideturtle()
-turtle.done()
+penup()
+goto(350,305)  
+pendown()
+begin_fill()
+color("orange")
+forward(30)
+right(90)
+forward(30)
+right(90)
+forward(50)
+right(90)
+forward(30)
+right(90)
+forward(30)
+end_fill()
+
+
+
+#step 4 : windows
+penup()
+goto(100,200)
+pendown()
+begin_fill()
+color("white")
+forward(50)
+right(90)
+forward(50)
+right(90)
+forward(50)
+right(90)
+forward(50)
+end_fill()
+
+penup()
+goto(200,250)
+pendown()
+begin_fill()
+color("white")
+forward(50)
+right(90)
+forward(50)
+right(90)
+forward(50)
+right(90)
+forward(50)
+end_fill()
+
+penup()
+goto(250,250)
+pendown()
+begin_fill()
+color("white")
+forward(50)
+right(90)
+forward(50)
+right(90)
+forward(50)
+right(90)
+forward(50)
+end_fill()
+
+penup()
+goto(350,200)
+pendown()
+begin_fill()
+color("white")
+forward(50)
+right(90)
+forward(50)
+right(90)
+forward(50)
+right(90)
+forward(50)
+end_fill()
+exitonclick()
