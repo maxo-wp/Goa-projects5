@@ -1,0 +1,9 @@
+num1="one"
+print(num1)
+num2="two"
+num3="three"
+print(num3)
+num4="number4"
+print(num4)
+num5="five"
+print(num5)
