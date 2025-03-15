@@ -1,0 +1,6 @@
+name=input("enter your age:")
+name1=input("enter your friends age:")
+print(int(name)+int(name1))
+print(int(name)-int(name1))
+print(int(name)*int(name1))
+print(int(name)/int(name1))
