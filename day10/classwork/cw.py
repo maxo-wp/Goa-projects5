@@ -1,0 +1,6 @@
+print(10 < 5) 
+print( 50 > 60)
+print( 100 == 200 )
+print( 10 <= 90 )
+print( 30 >=30 )
+print( 15 != 70)
