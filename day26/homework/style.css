@@ -1,0 +1,27 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 700px;
+}
+td,th{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+thead{
+    background-color: #9bcdcc ;
+}
+.line{
+    background-color: #99fe00;
+}
+.brown{
+    background-color: #9a9901;
+}
+.red{
+    background-color:#9a0000;
+}
+.orange{
+    background-color: #993400;
+}
+.green{
+    background-color:#9a9901;
+}
